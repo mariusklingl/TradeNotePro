@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="780.0" minWidth="1000.0" prefHeight="780.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mariusKlingl.mainWindow.TradeNoteProTradesVerwaltenController">
+   <children>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="53.0" text="Trade Note Pro - Trades verwalten" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="33.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menuBar" layoutX="1.0" layoutY="10.0" prefHeight="30.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="84.0" layoutY="100.0" minWidth="0.0" prefHeight="770.0" prefWidth="136.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <AnchorPane layoutY="123.0" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+               <children>
+                  <JFXButton fx:id="btnPortfolio" layoutX="4.0" layoutY="1.0" onAction="#btnPortfolioClicked" prefHeight="39.0" prefWidth="106.0" text="Portfolio" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-43.0" layoutY="-86.0" prefHeight="80.0" prefWidth="115.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="32.0" text="Menü" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Arial Black" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-9.0" layoutY="147.0" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+               <children>
+                  <JFXButton fx:id="btnTradesVerwalten" layoutX="4.0" layoutY="1.0" onAction="#btnTradesVerwaltenClicked" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: white;" text="Trades verwalten" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="878.0" layoutY="49.0" prefHeight="37.0" prefWidth="327.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="-3.0">
+         <children>
+            <AnchorPane layoutX="43.0" layoutY="72.0" prefHeight="55.0" prefWidth="167.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="79.0" layoutY="25.0" text="ETH-Price:" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label fx:id="lblEthPrice" layoutX="166.0" layoutY="26.0" text="&quot;price&quot;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="175.0" layoutY="19.0" prefHeight="35.0" prefWidth="167.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="79.0" layoutY="25.0" text="BTC-Price:" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label fx:id="lblBTCPrice" layoutX="166.0" layoutY="26.0" text="&quot;price&quot;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="157.0" layoutY="536.0" prefHeight="219.0" prefWidth="790.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="536.0">
+         <children>
+            <AnchorPane layoutX="37.0" layoutY="-6.0" prefHeight="219.0" prefWidth="562.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane layoutX="691.0" layoutY="10.0" prefHeight="219.0" prefWidth="333.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="170.0" layoutY="120.0" prefHeight="72.0" prefWidth="324.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="40.0" text="EUR Komplettes Portfolio" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEuroWert" layoutX="114.0" layoutY="44.0" text="8500 " textFill="#1f7922" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="118.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="182.0" layoutY="44.0" text="€" textFill="#1f7922" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="141.5" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
